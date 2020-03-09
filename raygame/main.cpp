@@ -10,6 +10,10 @@
 ********************************************************************************************/
 
 #include "raylib.h"
+#include "HashFunction.h"
+#include <iostream>
+#include <iomanip>
+
 
 int main()
 {
@@ -19,6 +23,11 @@ int main()
 	int screenHeight = 450;
 
 	InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
+
+	unsigned int hashVaule = HashFunction::defaulHash("Kyra", 4);
+
+	std::cout << std::hex << hashVaule << std::endl;
+
 
 	SetTargetFPS(60);
 	//--------------------------------------------------------------------------------------
@@ -37,7 +46,9 @@ int main()
 
 		ClearBackground(RAYWHITE);
 
-		DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
+		
+
+		//DrawText(std::to_string(HashFunction::badHash("", 5)), 190, 200, 20, LIGHTGRAY);
 
 		EndDrawing();
 		//----------------------------------------------------------------------------------
@@ -47,6 +58,6 @@ int main()
 	//--------------------------------------------------------------------------------------   
 	CloseWindow();        // Close window and OpenGL context
 	//--------------------------------------------------------------------------------------
-
+	
 	return 0;
 }
