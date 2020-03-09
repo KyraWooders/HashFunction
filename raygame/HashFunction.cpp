@@ -35,9 +35,7 @@ namespace HashFunction
 
 		for (unsigned int i = 0; i < length; i++)
 		{
-			hash = (hash * 69) + data[i] * (length + 69);
-
-			
+			hash = (hash * 69) + data[i] * (length + 69) / 7;
 		}
 
 		return (hash & 0xFFFFFF);
