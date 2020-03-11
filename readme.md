@@ -6,11 +6,13 @@
 
 ## I. Requirements
 
-- **Statement**: 
+- **Statement**: Create a hash table with a small application.
+
+- **Output**:
 
 ## II. Design Documentation
 
-
+####  
 
 ## License
 
