@@ -25,6 +25,7 @@ int main()
 	InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
 
 	unsigned int hashVaule = HashFunction::defaulHash("Kyra Wooders", 12);
+
 	Color hashColor = { hashVaule >> 16, hashVaule >> 8, hashVaule };
 
 	std::cout << std::hex << hashVaule << std::endl;
