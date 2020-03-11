@@ -15,7 +15,7 @@ namespace HashFunction
 		return hash;
 	}
 
-	//hash function by  
+	//hash function by Brian Kernighan and Dennis Ritchie
 	unsigned int bkdrHash(const char* data, unsigned int length)
 	{
 		unsigned int hash = 0;
@@ -28,7 +28,7 @@ namespace HashFunction
 		return (hash & 0x7FFFFFFF);
 	}
 
-	//my hash function
+	//my custom hash function
 	unsigned int kwHash(const char* data, unsigned int length)
 	{
 		unsigned int hash = 0;
